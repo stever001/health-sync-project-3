@@ -34,7 +34,7 @@
    flex-direction: column;
    gap: 10px;
    max-width: 400px;
-} /* Add closing curly brace here */
+}
 
 .apptForm-input,
 .apptForm-textarea {
@@ -61,7 +61,23 @@
    transition: background-color 0.2s;
 }
 
-/* .apptForm-group {
+.table {
+   background-color: aliceblue;
+}
+
+.table-header {
+   padding-top: 12px;
+   padding-bottom: 12px;
+   text-align: center;
+   background-color: hsl(197, 95%, 34%);
+   color: white;
+}
+
+.table-row tr:nth-child(even) {
+   background-color: #f2f2f2;
+}
+
+/* .form-group {
    display: flex;
    flex-direction: column;
    width: 100%;
