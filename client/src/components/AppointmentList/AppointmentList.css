@@ -1,85 +1,64 @@
-/* Updated CSS with "apptForm-" prefix for better specificity */
-.af-container {
+.apptList-container {
    display: flex;
    flex-direction: column;
    align-items: center;
    justify-content: center;
    margin: 0 auto;
-   width: 100%;
-   max-width: 400px;
+   width: 80%; /* Adjust the width to your preference */
+   max-width: 600px; /* Increased max-width */
    padding: 2rem;
    border-radius: 8px;
    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
    backdrop-filter: blur(10px);
    background-color: rgba(255, 255, 255, 0.1);
-}
-
-.form-container {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-   margin: 0 auto; /* Center the container itself */
-   width: 100%;
-   max-width: 400px; /* Adjust based on desired form width */
-   backdrop-filter: blur(10px);
-   background-color: rgba(255, 255, 255, 0.1);
-   padding: 2rem;
-   border-radius: 8px;
-   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
-}
-
-.form-group {
-   display: flex;
-   flex-direction: column;
-   gap: 10px;
-   max-width: 400px;
-}
-
-.apptForm-input,
-.apptForm-textarea {
-   padding: 8px;
-   margin-bottom: 10px;
-   border: 1px solid rgb(46, 10, 10);
-   border-radius: 9px;
-   font-size: 14px;
-}
-
-.apptForm-button {
-   padding: 10px 15px;
+ }
+ 
+ .apptList-table {
+   width: 100%; /* Ensures table uses the full width of its container */
+   border-collapse: separate; /* Ensures cell spacing is consistent */
+   border-spacing: 0; /* Reset default spacing */
+   margin-bottom: 20px; /* Space after the table */
+ }
+ 
+ .apptList-table-header th {
+   padding-bottom: 12px; /* Padding at the bottom of the header cells */
+ }
+ 
+ .apptList-table-row {
+   background-color: #f9f9f9; /* Light background for rows */
+   border-bottom: 1px solid #e1e1e1; /* Separator for rows */
+ }
+ 
+ .apptList-table-row td {
+   padding-top: 12px; /* Space above the cell content */
+   padding-bottom: 12px; /* Space below the cell content, adds row height */
+ }
+ 
+ /* Style for 'Update' action button */
+ .apptList-button-update {
+   padding: 6px 10px; /* Smaller padding for a smaller button */
    border: none;
    border-radius: 4px;
-   background-color: #00bde3;
+   background-color: #4CAF50; /* A green color for update */
    color: white;
    cursor: pointer;
-   font-size: 14px;
-}
-
-.apptForm-button:hover {
-   color: #0b0070;
-   background-color: #1cbed7;
-   transition: background-color 0.2s;
-}
-
-.table {
-   background-color: aliceblue;
-}
-
-.table-header {
-   padding-top: 12px;
-   padding-bottom: 12px;
-   text-align: center;
-   background-color: hsl(197, 95%, 34%);
+   font-size: 0.8rem; /* Smaller font size for readability */
+   margin-right: 5px; /* Space between buttons */
+ }
+ 
+ /* Style for 'Delete' action button */
+ .apptList-button-delete {
+   padding: 6px 10px; /* Smaller padding for a smaller button */
+   border: none;
+   border-radius: 4px;
+   background-color: #F44336; /* A red color for delete */
    color: white;
-}
-
-.table-row tr:nth-child(even) {
-   background-color: #f2f2f2;
-}
-
-/* .form-group {
-   display: flex;
-   flex-direction: column;
-   width: 100%;
-   margin-bottom: 1rem;
-} */
+   cursor: pointer;
+   font-size: 0.8rem; /* Smaller font size for readability */
+ }
+ 
+ .apptList-button-update:hover,
+ .apptList-button-delete:hover {
+   opacity: 0.8; /* Slight transparency on hover for feedback */
+ }
+ 
