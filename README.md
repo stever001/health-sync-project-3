@@ -32,6 +32,7 @@ This will allow connection to the servers.
 
 ## Usage
 Live URL: https://health-sync-project-3.onrender.com/  
+![Screenshot of the application](/images/screenshot.png "Application Screenshot")
 
 
 
