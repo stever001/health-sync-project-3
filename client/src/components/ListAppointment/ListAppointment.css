@@ -1,0 +1,45 @@
+/* Styles specific to the Appointment component */
+.list-appointment-wrapper {
+   margin-top: 200px;
+   padding: 50px;
+   text-align: center;
+   position: relative;
+}
+
+.list-appointment-container {
+   border-radius: 8px;
+   margin-bottom: 20px; /* Space between cards */
+   padding: 20px;
+   margin-bottom: 50px auto;
+   max-width: auto; /* Adjust based on design requirements */
+   position: relative;
+   z-index: 10;
+   display: flex; /* Added */
+   flex-direction: column; /* Added */
+   align-items: center; /* Added */
+}
+
+.list-appointment-heading {
+   /* Updated class selector */
+   color: rgb(2, 7, 18); /* Specific color */
+   font-size: 4rem; /* Large heading size */
+   margin-top: 20px;
+   margin-bottom: 20px; /* Spacing below the heading */
+   position: relative;
+   z-index: 10;
+}
+
+/* Button styles specific to this component */
+.appointment-container button {
+   cursor: pointer;
+   padding: 10px 20px;
+   background-color: #007bff;
+   color: white;
+   border: none;
+   border-radius: 5px;
+   transition: background-color 0.2s;
+}
+
+.appointment-container button:hover {
+   background-color: #279acc;
+}

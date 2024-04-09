@@ -9,6 +9,8 @@ import Contact from "./components/Contact/Contact";
 // import SignupForm from './components/auth/SignupForm';
 // import AppointmentForm from "./components/AppointmentForm";
 import Appointment from "./components/Appointment/Appointment";
+import ListAppointment from "./components/ListAppointment/ListAppointment";
+
 import HomeComponent from "./components/HomeComponent/HomeComponent";
 import "./App.css";
 
@@ -21,6 +23,7 @@ function App() {
          <Routes>
             <Route path="/" element={<HomeComponent />} />
             <Route path="/scheduleappt" element={<Appointment />} />
+            <Route path="/appt" element={<ListAppointment />} />
             <Route path="/about-us" element={<AboutUs />} />
             <Route path="/login" element={<LoginForm />} />
             <Route path="/contact" element={<Contact />} />
