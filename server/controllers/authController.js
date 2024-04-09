@@ -1,7 +1,7 @@
 // Import necessary modules or dependencies
 const { validateEmail, validatePassword } = require('../utils/authUtils');
 const User = require('../models/User');
-const bcrypt = require('bcryptjs');
+const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 
 // Function to register a new user
