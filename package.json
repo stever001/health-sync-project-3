@@ -31,9 +31,6 @@
     "@babel/preset-env": "^7.21.11",
     "@babel/preset-react": "^7.21.11",
     "babel-jest": "^29.7.0",
-
     "concurrently": "^8.2.2"
-
-   
   }
 }
