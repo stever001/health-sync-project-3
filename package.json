@@ -13,7 +13,7 @@
     "postinstall": "npm install --prefix client"
   },
   "keywords": [],
-  "author": "",
+  "author": "Steve Rouse",
   "license": "ISC",
   "dependencies": {
     "apollo-server-express": "^3.13.0",
