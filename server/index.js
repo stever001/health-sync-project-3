@@ -1,5 +1,6 @@
 // /server/index.js
 const express = require("express");
+const path = require("path"); // Import path module
 const { ApolloServer } = require("apollo-server-express");
 const mongoose = require("mongoose");
 
@@ -10,6 +11,15 @@ require("dotenv").config();
 
 async function startServer() {
     const app = express();
+
+    // Serve static files from the React app build directory in production
+    if (process.env.NODE_ENV === "production") {
+        app.use(express.static(path.join(__dirname, "../client/build")));
+
+        app.get("*", (req, res) => {
+            res.sendFile(path.join(__dirname, "../client/build", "index.html"));
+        });
+    }
 
     // Initialize Apollo Server with imported typeDefs and resolvers
     const apolloServer = new ApolloServer({ typeDefs, resolvers });
@@ -33,4 +43,5 @@ async function startServer() {
 
 // Execute the asynchronous server start function
 startServer();
+
 
