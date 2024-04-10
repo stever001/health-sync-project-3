@@ -11,23 +11,24 @@ const Navigation = () => {
                <Link to="/">Home</Link>
             </li>
             <li>
+               <Link to="/about-us">About Us</Link>
+            </li>
+            <li>
                <Link to="/scheduleappt">Schedule an Appointment</Link>
             </li>
             <li>
                <Link to="/appt">Appointments</Link>
             </li>
-            <li>
-               <Link to="/about-us">About Us</Link>
-            </li>
+            
             <li>
                <Link to="/contact">Contact</Link>
             </li>
-            <li>
+            {/* <li>
                <Link to="/login">Login</Link>
             </li>
             <li>
                <Link to="/signup">Sign Up</Link>
-            </li>
+            </li> */}
          </ul>
       </nav>
    );

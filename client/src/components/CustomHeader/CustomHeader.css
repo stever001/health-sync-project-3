@@ -20,6 +20,7 @@
   height: 150px; /* Fixed height to prevent resizing */
   margin-bottom: 0; /* Set to 0 or any specific value you need */
   overflow: visible; /* Allows the logo to overflow this container if needed */
+  position: relative; /* Relative positioning for the auth button */
 }
 
 .header-logo {
@@ -29,9 +30,8 @@
 
 .header-logo a img {
   height: 200px; /* Adjust the height as needed, but keep it proportional to your space. */
-  width: 250px; /* You can also set a specific width, depending on the logo's aspect ratio. */
-  max-width: 300px; /* Override any max-width constraints. */
-  max-height: 400px; /* Override any max-height constraints. */
+  width: auto; /* Adjust width to maintain aspect ratio */
+  max-width: 100%; /* Ensure it doesn't overflow the container */
   margin-top: 30px;
 }
 
@@ -41,19 +41,29 @@
   font-size: 5rem; /* Increase the font size */
   color: white;
   margin: 0 auto; /* Keeps it centered */
+  padding-left: 20px; /* Add padding to the left */
+  display: flex; /* Enables use of margin and padding for positioning */
+}
 
-  position: relative; /* Allows z-index to work */
-  padding-left: 0 20px; /* Add padding to make the text wider if needed */
-  display: flex; /* Allows padding to take effect and can help with centering */
-  max-width: 200%; /* Ensures text does not overflow the header width */
-  box-sizing: border-box; /* Includes padding in the element's total width */
-  justify-content: center;
-  align-items: center;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  box-sizing: border-box;
+/* Button for toggling the auth modal */
+.header-auth-button {
+  position: absolute; /* Absolute position the button inside .header-top */
+  right: 20px; /* 20px from the right edge */
+  top: 50%; /* Align vertically to the middle */
+  transform: translateY(-50%); /* Center it perfectly vertically */
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  background-color: #00bde3;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  z-index: 20; /* Ensure it's above other content */
+}
 
+.header-auth-button:hover {
+  background-color: #1cbed7;
+  transition: background-color 0.2s;
 }
 
 /* Adjustments for responsiveness */
@@ -61,6 +71,12 @@
   .header-title {
     font-size: 2rem; /* Smaller font size on smaller screens */
   }
+
+  .header-logo a img {
+    height: 100px; /* Smaller logo on smaller screens */
+    margin-top: 10px; /* Adjust top margin */
+  }
 }
+
 /* Ensure Navigation styles so that it stays at the bottom of the header */
-/* Your existing media queries and other styles can remain the same */
+/* Add your navigation-specific styles here */

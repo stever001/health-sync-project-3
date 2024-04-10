@@ -4,7 +4,7 @@ import CustomHeader from "./components/CustomHeader/CustomHeader";
 import CustomFooter from "./components/CustomFooter/CustomFooter"; // Make sure to create this component
 import BackgroundSlider from "./components/BackgroundSlider/BackgroundSlider";
 import AboutUs from "./components/AboutUs/AboutUs";
-import LoginForm from "./components/auth/LoginForm"; // Corrected import path
+// import LoginForm from "./components/auth/LoginForm"; // Corrected import path
 import Contact from "./components/Contact/Contact";
 // import SignupForm from './components/auth/SignupForm';
 // import AppointmentForm from "./components/AppointmentForm";
@@ -25,7 +25,7 @@ function App() {
             <Route path="/scheduleappt" element={<Appointment />} />
             <Route path="/appt" element={<ListAppointment />} />
             <Route path="/about-us" element={<AboutUs />} />
-            <Route path="/login" element={<LoginForm />} />
+            {/* <Route path="/login" element={<LoginForm />} /> */}
             <Route path="/contact" element={<Contact />} />
             {/* <Route path="/signup" element={<SignupForm />} /> */} {/* Uncomment or remove this line as needed */}
             {/* Add other routes as needed */}
